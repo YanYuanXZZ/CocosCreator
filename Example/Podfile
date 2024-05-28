@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'CocosCreator_Example' do
+  pod 'CocosCreator', :path => '../'
+
+  target 'CocosCreator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
