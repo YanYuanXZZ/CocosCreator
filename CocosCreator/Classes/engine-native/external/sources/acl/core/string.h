@@ -25,8 +25,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "acl/core/impl/compiler_utils.h"
-#include "external/source/acl/core/iallocator.h"
-#include "external/source/acl/core/error.h"
+#include "acl/core/iallocator.h"
+#include "acl/core/error.h"
 
 #include <memory>
 
