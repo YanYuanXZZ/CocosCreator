@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B43E251954D158C2C79A493 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1B43E251954D158C2C79A493 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5D881943F3A4CEA8ECB9314F /* Pods-CocosCreator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocosCreator_Example.debug.xcconfig"; path = "Target Support Files/Pods-CocosCreator_Example/Pods-CocosCreator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CocosCreator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocosCreator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,10 +42,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8EFEDCE8048DB16594810B00 /* Pods-CocosCreator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocosCreator_Example.release.xcconfig"; path = "Target Support Files/Pods-CocosCreator_Example/Pods-CocosCreator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9331CF271B2DC414E47D861C /* Pods_CocosCreator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocosCreator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B391DEA495C650D42D046185 /* CocosCreator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CocosCreator.podspec; path = ../CocosCreator.podspec; sourceTree = "<group>"; };
+		B391DEA495C650D42D046185 /* CocosCreator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CocosCreator.podspec; path = ../CocosCreator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C6D7CC787E15F0429914C476 /* Pods_CocosCreator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocosCreator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87AF150181001DCB7831949 /* Pods-CocosCreator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocosCreator_Tests.release.xcconfig"; path = "Target Support Files/Pods-CocosCreator_Tests/Pods-CocosCreator_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FAA308F8F23C5178D153B4BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FAA308F8F23C5178D153B4BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FABC8F12488A29A836D2D0B2 /* Pods-CocosCreator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocosCreator_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CocosCreator_Tests/Pods-CocosCreator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				FABC8F12488A29A836D2D0B2 /* Pods-CocosCreator_Tests.debug.xcconfig */,
 				F87AF150181001DCB7831949 /* Pods-CocosCreator_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,6 +478,77 @@
 			baseConfigurationReference = 5D881943F3A4CEA8ECB9314F /* Pods-CocosCreator_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'CC_PLATFORM_WINDOWS=2'",
+					"'GAME_NAME=\"HelloWorld-mobile\"'",
+					"'CC_PLATFORM_MACOS=4'",
+					BOOST_NO_CXX98_FUNCTION_BASE,
+					"'CC_PLATFORM=1'",
+					"'CC_PLATFORM_IOS=1'",
+					"'CC_PLATFORM_MAC_OSX=4'",
+					"'CC_NETMODE_CLIENT=0'",
+					"'CC_PLATFORM_MAC_IOS=1'",
+					"'CC_PLATFORM_ANDROID=3'",
+					"'CC_PLATFORM_OHOS=5'",
+					"'CC_PLATFORM_EMSCRIPTEN=9'",
+					"'CC_NETMODE_LISTEN_SERVER=1'",
+					"'CC_NETMODE_HOST_SERVER=2'",
+					"'CC_USE_EDITBOX=1'",
+					"'CC_USE_XR_REMOTE_PREVIEW=0'",
+					"'CC_USE_VIDEO=1'",
+					"'CC_USE_JOB_SYSTEM_TASKFLOW=0'",
+					"'BOOST_ALL_NO_LIB=1'",
+					"'USE_V8_DEBUGGER=1'",
+					"'CC_NETMODE=0'",
+					"'CC_USE_JOB_SYSTEM_TBB=0'",
+					"'CC_USE_SPINE=1'",
+					"'CC_USE_SOCKET=1'",
+					"'CC_USE_WEBSOCKET_SERVER=0'",
+					"'CC_USE_DRAGONBONES=1'",
+					"'CC_USE_AUDIO=1'",
+					"'CC_USE_XR=0'",
+					"'CC_USE_WEBVIEW=1'",
+					"'CC_USE_GEOMETRY_RENDERER=0'",
+					"'CC_USE_MIDDLEWARE=1'",
+					"'CC_USE_PHYSICS_PHYSX=0'",
+					"'CC_USE_AR_MODULE=0'",
+					"'CC_USE_AR_AUTO=0'",
+					"'CC_USE_AR_CORE=0'",
+					"'CC_USE_DEBUG_RENDERER=0'",
+					CC_USE_METAL,
+					V8_ENABLE_LAZY_SOURCE_POSITIONS,
+					"'CC_USE_OCCLUSION_QUERY=0'",
+					BOOST_CONTAINER_NO_LIB,
+					ENABLE_MINOR_MC,
+					V8_ATOMIC_MARKING_STATE,
+					"'CC_USE_AR_ENGINE=0'",
+					"'CC_EDITOR=0'",
+					BOOST_UUID_FORCE_AUTO_LINK,
+					"'V8_TYPED_ARRAY_MAX_SIZE_IN_HEAP=64'",
+					V8_ATOMIC_OBJECT_FIELD_WRITES,
+					ENABLE_HANDLE_ZAPPING,
+					"'CC_USE_WEBP=1'",
+					"'ENABLE_FLOAT_OUTPUT=0'",
+					"'SCRIPT_ENGINE_TYPE=2'",
+					"'CC_DEBUG=1'",
+					BOOST_CONTAINER_STATIC_LINK,
+					V8_WIN64_UNWINDING_INFO,
+					V8_SHARED_RO_HEAP,
+					V8_ENABLE_REGEXP_INTERPRETER_THREADED_DISPATCH,
+					V8_SNAPSHOT_COMPRESSION,
+					V8_ENABLE_SYSTEM_INSTRUMENTATION,
+					V8_ENABLE_WEBASSEMBLY,
+					V8_DEPRECATION_WARNINGS,
+					V8_IMMINENT_DEPRECATION_WARNINGS,
+					CPPGC_CAGED_HEAP,
+					V8_TARGET_ARCH_ARM64,
+					V8_HAVE_TARGET_OS,
+					V8_TARGET_OS_IOS,
+					DISABLE_UNTRUSTED_CODE_MITIGATIONS,
+				);
 				INFOPLIST_FILE = CocosCreator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

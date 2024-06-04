@@ -1,0 +1,16 @@
+PODS:
+  - CocosCreator (0.1.0)
+
+DEPENDENCIES:
+  - CocosCreator (from `../`)
+
+EXTERNAL SOURCES:
+  CocosCreator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocosCreator: 1a39918bd249556b6058617444a1362ac5fbc532
+
+PODFILE CHECKSUM: e32f7e8567973ff086845d324030540177aef71b
+
+COCOAPODS: 1.15.2

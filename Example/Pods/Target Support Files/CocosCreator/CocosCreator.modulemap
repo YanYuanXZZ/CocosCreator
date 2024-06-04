@@ -1,0 +1,6 @@
+framework module CocosCreator {
+  umbrella header "CocosCreator-umbrella.h"
+
+  export *
+  module * { export * }
+}
