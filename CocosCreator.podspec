@@ -129,6 +129,7 @@ TODO: Add long description of the pod here.
         # 'CocosCreator/Libraries/libs'
   ],
   'OTHER_LDFLAGS' => [
+        '-Wl,-ld_classic',
         '-Wl,-headerpad_max_install_names',
 #          '$(PODS_ROOT)/CocosCreator/CocosCreator/Libraries/libs/**/*.a'
 #          '$(PODS_ROOT)/CocosCreator/CocosCreator/Libraries/libcocos2d_iOS.a',
@@ -162,7 +163,8 @@ TODO: Add long description of the pod here.
   'HEADER_SEARCH_PATHS' => [
         '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native',
         '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/cocos/platform/ios',
-        
+        '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/generated',
+        '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/generated/cocos',
         '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/external/sources/khronos',
         '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/cocos',
         '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/cocos/platform',
@@ -171,7 +173,7 @@ TODO: Add long description of the pod here.
         '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/cocos/editor-support',
         '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/cocos/bindings/jswrapper',
         '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/external/sources',
-#          '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/external/sources/SocketRocket',
+          '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/external/sources/SocketRocket',
         '$(PODS_ROOT)/CocosCreator/CocosCreator/Classes/engine-native/external/ios/include'
         # '$(PODS_ROOT)/../../../CocosCreator/CocosCreator/Classes/engine',
         # '$(PODS_ROOT)/../../../CocosCreator/CocosCreator/Classes/engine/cocos',
